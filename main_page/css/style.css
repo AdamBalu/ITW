@@ -10,8 +10,9 @@ html, body {
 	font-family: 'DotGothic16', sans-serif;
 }
 
-a {
+a, a:hover, a:visited, a:active {
 	text-decoration: none;
+	color: inherit;
 }
 
 h1 {
@@ -20,8 +21,13 @@ h1 {
 	margin-bottom: 0;
 }
 
+h1 a:focus, h1 a:hover {
+	outline: none;
+}
+
 *, *:before, *:after {
 	box-sizing: inherit;
+	cursor: cell;
 }
 
 .group:before,
@@ -54,7 +60,7 @@ img {
 	transition: transform 1s;
 }
 
-a:hover {
+.button:hover {
 	background: linear-gradient(to left bottom,#08420f,#1f3c93,#3521a5);
 	transform: translate3d(0, -0.2em, 0);
 }

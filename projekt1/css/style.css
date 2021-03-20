@@ -1,5 +1,11 @@
+/*
+ **************
+ *  MAIN
+ *  ELEMENTS
+ **************
+ */
+
 body {
-	max-width: 1200px;
 	margin: 0 auto;
 	background-color: hsl(0deg 0% 100%);
 	font-family: 'Merriweather', serif;
@@ -25,6 +31,40 @@ ul {
 	list-style-type: none;
 }
 
+a { text-decoration: none; }
+a:hover { color: black; }
+
+blockquote {
+	padding-bottom: 40px;
+	margin-left: 0;
+}
+
+blockquote p {
+	font-size: 18px;
+	font-style: italic;
+	color: #4d4d4d;
+}
+
+section, #middle-sections .content, #header,
+#navigation, footer .content {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.content {
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*
+ **************
+ *  HEADER,
+ *  LOGO,
+ *  NAVIGATION
+ **************
+ */
+
 #header h1 {
 	margin: 0;
 	position: relative;
@@ -43,12 +83,9 @@ ul {
 
 #nav-logo a { color: black; }
 
-a { text-decoration: none; }
-a:hover { color: black; }
-
 #navigation {
 	padding-top: 20px;
-	padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 #navigation .content {
@@ -69,27 +106,35 @@ a:hover { color: black; }
 #nav-menu li {
 	display: inline-block;
 	font-size: 13px;
-	padding-right: 10px;
+	padding-right: 20px;
 	letter-spacing: .05em;
 }
 
 #nav-menu li a { color: #bfbfbf; }
 #nav-menu li a:hover { color: black; }
 
-.content {
-	box-sizing: border-box;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
 #header img {
 	width: 100%;
 	position: relative;
 }
 
+/*
+ **************
+ *  CLEARFIX
+ **************
+ */
+
 #about:before, #middle-sections:before, #steps:before, #contact:before,
 #about:after, #middle-sections:after, #steps:after , #contact:after {content:" "; display:table;}
 #about:after, #middle-sections:after, #steps:after, #contact:after {clear :both;}
+
+
+/*
+ *******************
+ *  BODY -
+ *  MIDDLE SECTIONS
+ *******************
+ */
 
 #about, #middle-sections {
 	display: block;
@@ -105,7 +150,7 @@ a:hover { color: black; }
 .about-item img { width: 100%; }
 
 #about .content > div { white-space: nowrap; }
-/* #about .content :nth-child(3) { white-space: nowrap; } */
+
 .about-item {
 	display: inline-block;
     width: 31%;
@@ -153,6 +198,14 @@ a:hover { color: black; }
 	margin-bottom: 10px;
 }
 
+/*
+ **************
+ *  NEWS,
+ *  REFERENCES,
+ *  STEPS
+ **************
+ */
+
 #news {
 	width: 56%;
 	float: left;
@@ -179,22 +232,9 @@ a:hover { color: black; }
 	padding-bottom: 20px;
 }
 
-blockquote {
-	padding-bottom: 40px;
-	margin-left: 0;
-	/* margin-right: 0;  ONLY IF TH RESOLUTION IS LOWER, TODO */
-}
-
-blockquote p {
-	font-size: 18px;
-	font-style: italic;
-	color: #4d4d4d;
-}
-
 #news-btn {
 	font-size: 13px;
 	font-weight: bold;
-
 	text-transform: uppercase;
 	letter-spacing: .15em;
 	padding-top: 20px;
@@ -223,10 +263,6 @@ blockquote p {
 	margin-right: 20px;
  }
 
- #steps {
- 	margin: 40px 0 100px 0;
- }
-
 #steps i {
 	font-size: 60px;
 	color: lightsteelblue;
@@ -244,13 +280,26 @@ blockquote p {
 
  .steps-item p {
  	max-width: 300px;
+ 	padding-right: 15px;
  }
+
+ .steps-item i {
+	float: left;
+	margin: 0 20px 250px 0;
+}
 
  .steps-more {
  	font-size: 11px;
  	text-transform: uppercase;
 	font-weight: bold;
  }
+
+/*
+ **************
+ *  FOOTER -
+ *  CONTACT
+ **************
+ */
 
  #contact {
  	padding: 40px 0 100px 0;
@@ -295,26 +344,15 @@ blockquote p {
 
 input:invalid { color: red; }
 
-footer {
-	position: absolute;
-	width: 100%;
-	left: 0;
-}
-
-footer .content {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
 #submit-btn {
 	background: steelblue;
 	color: white;
 	border-radius: 4px;
 	border: none;
 	text-transform: uppercase;
-	letter-spacing: 3px;
+	letter-spacing: .15em;
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 13px;
 	width: 70px;
 	text-align: center;
 }
@@ -327,18 +365,16 @@ footer .content {
 	padding-left: 10px;
 }
 
-.steps-item i {
-	float: left;
-	margin: 0 20px 250px 0;
+#footer-note {
+    color: white;
+    background: #1a1a1a;
+    font-size: 12px;
 }
 
-#footer-note {
-    position: absolute;
-    width: 100%;
-    padding: 25px 0;
-    left: 0;
-    color: white;
-    background: black;
-    outline: red;
-    z-index: 100;
+#footer-note .content {
+	margin: 0 auto;
+	padding: 20px 0;
+	max-width: 1200px;
+	color: #898989;
+	padding-left: 15px;
 }
