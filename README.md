@@ -1,4 +1,5 @@
 # ITW
+Pre vizuálnu podobu - https://www.stud.fit.vutbr.cz/~xbalus01/main_page/
 
 | Projekt | BODY  |
 |:--------|:------|
