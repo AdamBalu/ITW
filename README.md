@@ -1,5 +1,5 @@
 # ITW
-Pre vizuálnu podobu - https://www.stud.fit.vutbr.cz/~xbalus01/main_page/
+Pre vizuálnu podobu cvičení z ITW - https://www.stud.fit.vutbr.cz/~xbalus01/main_page/
 
 | Projekt | BODY  |
 |:--------|:------|
