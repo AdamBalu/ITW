@@ -1,4 +1,5 @@
 # ITW
+basic HTML, CSS and a bit of JS practice, nothing special
 
 | Projekt | BODY  |
 |:--------|:------|
